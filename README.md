@@ -6,7 +6,7 @@ Here in my code repository, you'll find the blueprint to my digital journey âœˆï
 Hey there, after doing alittle bit rogramming, i thought i should start from the start, i should learn from the basic, Then i started doing the following:
 
 **1. C:** <br>
-Hey there, after doing alittle bit programming, I thought I should start from the start, I should learn from the basic, Then I started the **C**.
+Hey there, after doing alittle bit programming, Then I thought I should start from the start, I should learn from the basic, and I started the **C**.
 I initiated my Journey with a simple and a well known programming language, C. Its fundamental concepts serve as an valuable amount of knowledge.
 
 **2. Java:** <br>

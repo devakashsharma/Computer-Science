@@ -11,6 +11,7 @@ I initiated my Journey with a simple and a well known programming language, C. I
 
 **2. Java** <br>
 Hey There, after the learning c, I started started my journey into the world of Java! 📚✨
-Java is known for its simplicity and portability. I would say, it is to learn to Java (for me 🙃). I'm still learning and I'm very excited to explore its features and capabilities of Java programming.
+Java is known for its simplicity and portability. I would say, it is to learn to Java (for me 🙃). I'm still learning and I'm very excited to explore its features and capabilities of Java programming. <br>
+To be very honest Java is Love ❣️❣️.
 
 and I'll be update the codes and resources from time to time.........

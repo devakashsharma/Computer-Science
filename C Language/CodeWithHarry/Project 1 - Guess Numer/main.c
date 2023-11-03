@@ -8,8 +8,6 @@ int main() {
     srand(time(0));
     number = rand() % 100 + 1; // generate a randem number between 1 to 100
 
-    // printf("The num is: %d", number);
-
     // keep playing till the end of the game
     do
     {

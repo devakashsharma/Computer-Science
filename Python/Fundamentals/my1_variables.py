@@ -12,5 +12,9 @@ print(x, y, z, is_correct)
 # type casting
 num = 34
 print(type(num))
+
 num = str(num)
+print(type(num))
+
+num = int(num)
 print(type(num))

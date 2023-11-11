@@ -1,4 +1,4 @@
-package Java.My4_methods;
+package Java.My5_Array;
 
 public class L17_array {
     public static void main(String[] args) {

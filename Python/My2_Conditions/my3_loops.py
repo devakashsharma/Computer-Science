@@ -1,8 +1,8 @@
 name = ['naruto', 'sasuke', 'tanjiro', 'zenitsu']
 
 # simple for loop
-for names in name:
-    print(f"current character name = {names}")
+# for names in name:
+#     print(f"current character name = {names}")
 
 # break
 # for names in name:
@@ -14,3 +14,5 @@ for names in name:
 for names in name:
     if names == 'tanjiro':
         continue
+
+print("Finished Program!")

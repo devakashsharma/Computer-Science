@@ -24,10 +24,19 @@ public class L18_multiArray {
         // puting the value
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 4; j++) {
-                num[i][j] = (int)(Math.random()*100); // (int) will convert the double into integer and *100 will return the value within 100
-                System.out.print(num[i][j] + " ");
+                // num[i][j] = (int)(Math.random()*100); // (int) will convert the double into integer and *100 will return the value within 100
+                num[i][j] = (int)(Math.random()*10); // it will return the value within 10
+                // System.out.print(num[i][j] + " ");
+            }
+            // System.out.println();
+        }
+
+        for (int elements[]: num){
+            for (int element: elements) {
+                System.out.print(element + " ");
             }
             System.out.println();
         }
+
     }
 }

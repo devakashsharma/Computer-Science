@@ -16,5 +16,7 @@ public class L23_mutable_vs_immutable {
         
         // and in line 6 we add ' Sharma', at there, in the heap memory a new memory will allocate as 'Akash Sharma" and the old value will delete after sometime
         // the reference of new value will be assign to variable 'name'.
+
+        // by default java strings are immutable
     }
 }

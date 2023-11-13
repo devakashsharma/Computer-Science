@@ -1,4 +1,4 @@
-package Telsuko.My2_Conditional;
+package Java.My2_Conditional;
 
 public class L7_else_if
 {

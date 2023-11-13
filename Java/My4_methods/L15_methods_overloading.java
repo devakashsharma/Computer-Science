@@ -1,4 +1,4 @@
-package Telsuko.My4_methods;
+package Java.My4_methods;
 
 class Calculator {
     public int add(int n1, int n2) {

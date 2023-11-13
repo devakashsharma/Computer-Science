@@ -1,4 +1,4 @@
-package Telsuko.My4_methods;
+package Java.My4_methods;
 
 class Car {
     int price = 100;

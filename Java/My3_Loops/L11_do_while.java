@@ -1,4 +1,4 @@
-package Telsuko.My3_Loops;
+package Java.My3_Loops;
 
 public class L11_do_while {
     public static void main(String[] args) {

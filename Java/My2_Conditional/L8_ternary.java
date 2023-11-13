@@ -1,4 +1,4 @@
-package Telsuko.My2_Conditional;
+package Java.My2_Conditional;
 
 public class L8_ternary {
     public static void main(String[] args) {

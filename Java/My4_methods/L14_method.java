@@ -1,4 +1,4 @@
-package Telsuko.My4_methods;
+package Java.My4_methods;
 
 class JavaMethods {
     public void playMusic() {

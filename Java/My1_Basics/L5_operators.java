@@ -1,4 +1,4 @@
-package Telsuko.My1_Basics;
+package Java.My1_Basics;
 
 public class L5_operators {
     public static void main(String[] args) {

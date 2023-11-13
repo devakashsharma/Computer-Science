@@ -1,4 +1,4 @@
-package Telusko.My1_Basics;
+package Java.My1_Basics;
 
 public class L2_var 
 {

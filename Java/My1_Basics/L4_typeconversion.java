@@ -1,6 +1,6 @@
-package Telsuko.My1_Basics;
+package Java.My1_Basics;
 
-public class L4_typecasting {
+public class L4_typeconversion {
     public static void main(String[] args) {
 
         // casting is explicit conversion

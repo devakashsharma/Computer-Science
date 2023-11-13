@@ -37,6 +37,8 @@ public class L31_constructor {
     public static void main(String[] args) {
         Humans2 obj = new Humans2();
         Humans2 obj2 = new Humans2(30, "Akash");
+        System.out.println(obj.getName() + " : " + obj.getAge());
         System.out.println(obj2.getName() + " : " + obj2.getAge());
+
     }
 }

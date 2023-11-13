@@ -11,7 +11,7 @@ class Humans2 {
         age = 21;
     }
 
-    public Humans2(int a, String n) { // parameterized constructor
+    public Humans2(int a, String n) { // parameterized constructor: A constructor which takes a value
         name = n;
         age = a;
     }

@@ -16,7 +16,7 @@ public class myClass5_singleLevel {
     public static void main(String[] args) {
         Triangle1 t1 = new Triangle1();
         t1.color = "Black";
-        
+
         System.out.println(t1.color);
 
     }

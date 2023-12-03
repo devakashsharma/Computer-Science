@@ -8,14 +8,15 @@ class Laptop {
         // return "Hello";
         return model + " : " + price;
     }
-    public boolean equals(Laptop Laptop2) {
+
+    // public boolean equals(Laptop Laptop2) {
         // if (this.model.equals(Laptop2.model) && this.price == Laptop2.price)
         //    return true;
         // else
         //    return false;
 
-        return this.model.equals(Laptop2.model) && this.price == Laptop2.price;
-    }
+        // return this.model.equals(Laptop2.model) && this.price == Laptop2.price;
+    // }
 
     @Override
     public boolean equals(Object o) {

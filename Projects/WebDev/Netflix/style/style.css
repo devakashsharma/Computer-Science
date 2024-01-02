@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", "Poppins", "sans-serif";
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-image: url("/Computer-Science-Projects/WebDev/Netflix/assets/image/main_background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 80vh;
+  position: relative;
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 80vw;
+  height: 80px;
+}
+
+.logoImg {
+  color: #ff0000;
+  width: 140px;
+  position: relative;
+  z-index: 4;
+}
+
+nav div button {
+  position: relative;
+  z-index: 4;
+}
+
+.hero {
+  height: calc(100% - 80px);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+}
+
+.first-class {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.sec-class {
+  font-size: 24px;
+}
+
+.third-class {
+  font-size: 20px;
+}
+
+
+.navBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-lang {
+  padding: 4px 10px;
+  font-size: 1rem;
+  border: 0.1px solid #595858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-sn {
+  background: #e50914;
+  padding: 6px 14px;
+  border: #ff0000;
+}
+
+.btn-st {
+  background: #e50914;
+  padding: 5px 12px 5px 20px;
+  font-size: 1.5rem;
+  border: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-st-gt {
+    font-weight: 900;
+}
+
+.main input {
+  padding: 10px 120px 11px 22px;
+  font-size: 15px;
+  border: 1px solid rgba(223, 223, 223, 0.7);
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #17171733;
+}
+
+.main input::placeholder {
+  color: #ffffff;
+}
+
+.membership {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.separation {
+  height: 10px;
+  width: 100%;
+  background-color: #232323;
+}
+
+.first-section {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    color: #ffffff;
+    /* max-width: 70vw;
+    margin: auto; */
+    /* gap: 200px; */
+}
+
+.first-first-div {
+    max-width: 45vw;
+}
+
+.first-first-div h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.first-first-div p {
+    font-size: 24px;
+}
+
+
+.first-sec-div {
+    position: relative;
+}
+
+.first-sec-div img {
+    width: 30vw;
+    position: relative;
+    z-index: 5;
+}
+
+.first-sec-div video {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 27vw;
+
+}
+
+/* second section */
+.second-section {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #000000;
+  color: #ffffff;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgSec {
+  width: 20vw;
+}
+
+.img-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #595858;
+  background-color: #000000;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  left: 50px;
+}
+
+.mainImg {
+  width: 27vw;
+}
+
+.series-poster {
+  width: 4vw;
+}
+
+.series-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.series-name :first-child {
+  font-weight: 700;
+}
+
+.series-name :nth-child(2) {
+  font-size: 14px;
+  color: #0071EB;
+}
+
+.dl-gif {
+  width: 3rem;
+}
+
+/* third section */
+.third-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-img-sec {
+  position: relative;
+}
+.third-img-sec :nth-child(2) {
+  width: 18vw;
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+
+/* FAQ Box */
+.faq {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.faq h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 60px auto 40px;
+}
+
+.faq-box {
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 70vw;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.faq-box:hover {
+  transition: all 0.3s ease;
+  background-color: #414141;
+}
+
+.box-icon:hover {
+  border-radius: 10px;
+  background-color: #404040;
+}
+
+/* subscription box design */
+
+.sub-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px auto;
+
+}
+
+.sub-box h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sub-box div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.sub-box div input {
+  padding: 10px 120px 11px 22px;
+  font-size: 15px;
+  border: 1px solid rgba(223, 223, 223, 0.7);
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #17171733;
+}
+
+.sub-box div input::placeholder {
+  color: #ffffff;
+}
+.btn-st {
+  background-color: #e50914;
+  padding: 5px 12px 5px 20px;
+  font-size: 1.5rem;
+  border: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  border-radius: 0.1875rem;
+}
+
+.btn-st-gt {
+    font-weight: 500;
+}
+
+/* footer */
+footer {
+  background-color: #000000;
+  color: rgba(255,255,255,0.7);
+  height: 55vh;
+  font-size: 14px;
+}
+
+.main-footer {
+  max-width: 70vw;
+  margin: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .questions {
+  padding: 30px 0px;
+  color: rgba(255,255,255,0.7)
+}
+
+a {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7)
+  /* text-decoration: none; */
+}
+
+.footer-btn {
+  margin: 20px 0px;
+  padding: 4px 7px;
+  font-size: 14px;
+  border: 0.1px solid #595858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* .NFA {
+  margin-bottom: 60px;
+} */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="firstDiv">
+        <h1 id="firstHead" class="mainHeading">DOM</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    
+    <script>
+        document.getElementById("firstHead"); // <h1 id="firstHead" class="mainHeading">DOM</h1>
+        document.getElementById("firstHead").className // mainHeading
+        document.getElementById("firstHead").getAttribute('id'); // 'firstHead'
+        document.getElementById("firstHead").getAttribute('class'); // 'mainHeading'
+        document.getElementById("firstHead").setAttribute('class', "mainHeading testing" ) // <h1 id="firstHead" class="mainHeading testing">DOM</h1>
+        const mainDiv = document.getElementById("firstHead");
+        mainDiv.style.backgroundColor = "red";
+
+        // innerHTML vs innerText vs textContent
+        // innerHTML
+        // suppose we have "<h1 id="firstHead" class="mainHeading">DOM <span> new </span> </h1>", it will print the span too with span tage the output will be
+        // DOM <span> new </span>
+
+        // innerText
+        // it will print all the visible value suppose if I don't want to print the span, and I set - display: none then it will not be visible in the page as well as in the console, output will be
+        // DOM
+
+        // textContent
+        // it will print all the text inside any element, even is display is none
+        // DOM new 
+
+        document.querySelector("#id")
+        document.querySelector(".class")
+        document.querySelector('input[type="password"]')
+
+        const myUl = document.querySelector('ul');
+        myUl.querySelector('li:first-child').style.backgroundColor = "Red";
+
+        const tempLiList = document.querySelectorAll('li');
+        tempLiList.style.color = "orange"; // syntax error because it is nodeList and it is different from
+
+    </script>
+</body>
+</html>

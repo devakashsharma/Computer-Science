@@ -18,9 +18,9 @@
     </div>
 
     <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
     </ul>
     
     <script>
@@ -54,7 +54,30 @@
 
         const tempLiList = document.querySelectorAll('li');
         tempLiList.style.color = "orange"; // syntax error because it is nodeList and it is different from
+        tempLiList[0].style.color = 'blue';
 
+        // in order to get all the nodes then we can do this
+        // tempLiList.forEach((element) => {
+        //     console.log(element);
+        // })
+        tempLiList.forEach((element) => {
+            element.style.backgroundColor = "#fff";
+            element.style.color = "#000";
+        })
+
+        // how to convert HTMLcollection file to an array
+        document.getElementsByClassName('list-item') // HTMLCollection(3) [li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-itemlength: 3[[Prototype]]: HTMLCollection
+        const htmlCol = document.getElementsByClassName('list-item') // undefined
+        // htmlCol // HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+        const convertToArray = Array.from(htmlCol) // undefined
+        // convertToArray // (3) [li.list-item, li.list-item, li.list-item]
+
+        convertToArray.forEach(element => {
+            element.style.color = 'blue'
+        })
+
+
+        // Do some operation on Wikipedia
     </script>
 </body>
 </html>

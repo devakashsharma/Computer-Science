@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: #212121;
+        }
+
+        .day {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+    </div>
+
+    <!-- due to spaces between div it is showing text before every element -->
+    <!-- <div class="container"><div class="day">Monday</div><div class="day">Tuesday</div><div class="day">Wednesday</div><div class="day">Thursday</div><div class="day">Friday</div></div> -->
+
+    <script>
+        const parent = document.querySelector(".container")
+        console.log(parent);
+        console.log(parent.children);
+        console.log(parent.children[4]);
+
+        for (let i = 0; i < parent.children.length; i++) {
+            // console.log(parent.children[i]);
+            console.log(parent.children[i].innerHTML);
+        }
+
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild.innerHTML);
+
+        // how to go through chlid to parent?
+        const one = document.querySelector('.day');
+        console.log(one);
+        console.log(one.parentElement);
+        console.log(one.nextElementSibling);
+
+        console.log("Nodes: ", parent.childNodes);
+
+
+    </script>
+</body>
+</html>

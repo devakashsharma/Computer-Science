@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Attribute with DOM</title>
+</head>
+<body>
+    <ul class="lang">
+        <li>Java</li>
+    </ul>
+
+    <script>
+        function addLang(lang) {
+            const li = document.createElement("li");
+            li.innerText = `${lang}`;
+            document.querySelector(".lang").appendChild(li);
+        }
+
+        addLang("JavaScript")
+        addLang("Python")
+
+        // let's do in a optimize way
+        function addOptimizeLang(lang) {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(`${lang}`));
+            document.querySelector(".lang").appendChild(li);
+        }
+        addOptimizeLang("Kotlin")
+        addOptimizeLang("Swift")
+
+        // edit 
+        const secondLang = document.querySelector("li:nth-child(5)")
+        console.log(secondLang);
+        const li2 = document.createElement("li");
+        li2.textContent = "Mojo";
+        secondLang.replaceWith(li2)
+
+        // another way to edit
+        const nLang = document.querySelector("li:nth-child(4)")
+        nLang.outerHTML = "<li>TypeScript</li>"
+
+
+        // remove
+        const removeLang = document.querySelector("li:last-child");
+        removeLang.remove()
+
+
+    </script>
+</body>
+</html>

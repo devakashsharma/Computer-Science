@@ -1,12 +1,13 @@
 # Projects related to DOM
 
 ## Projects link
-[click Here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+[Click Here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 ## Project 1 - Color Changer
 
 ```javascript
 console.log("Project 1 - Solution");
+
 const buttons = document.querySelectorAll(".button");
 // console.log(buttons)
 const body = document.querySelector("body");

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Elements</title>
+</head>
+<body>
+    <script>
+        const div = document.createElement('div');
+        div.id = "myID";
+        // div.id = matj;
+        div.className = "jd-div";
+        // div.id = Math.round(Math.random() * 10 + 1);
+        div.setAttribute('title', 'generated title');
+        div.style.backgroundColor = "blue";
+        div.style.padding = "10px";
+
+        // div.innerText = "Creating HTML with JS";
+        // better way to optimize it is:
+        const addNode = document.createTextNode("Creating HTML attributes with JS");
+        div.appendChild(addNode);
+
+        // adding attribute in HTML
+        document.body.appendChild(div);
+
+    </script>
+</body>
+</html>

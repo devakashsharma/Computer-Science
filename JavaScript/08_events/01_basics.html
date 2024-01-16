@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body {
+            background-color: #414141; 
+            color: aliceblue;
+        }
+        a {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+
+   <!-- Script file -->
+   <script>
+        // document.getElementById('owl').onclick = function() {
+        //     alert("owl clicked");
+        // } // this lead us to event bubbling
+
+        // earlier methods to use eventlistener
+        // attachEvent()
+        // JQuery - on
+        
+        // type, timeStamp, defaultPrevented(), target, toElement, srcElement, currentTarget
+        // interview - clientX, clientY, screenX, screenY
+        // altKey, ctrlKey, shiftKey, keyCode
+
+
+        // so better way to do this use event listener
+        // document.getElementById('images').addEventListener('click', (event) => {
+        //     // alert("owl clicked");
+        //     console.log("ul clicked");
+        // }, false) // it is event propogation and it is set by default to false
+        
+        // document.getElementById('owl').addEventListener('click', (event) => {
+        //     console.log("owl clicked");
+        // }, false) 
+        
+        // document.getElementById('images').addEventListener('click', (event) => {
+        //     // alert("owl clicked");
+        //     console.log("ul clicked");
+        // }, true) // it is set by default false
+        
+        // document.getElementById('owl').addEventListener('click', (event) => {
+        //     console.log("owl clicked");
+        //     event.stopPropagation(); // it will stop the event bubbling/propogation
+        // }, true) 
+
+        // if we set the value to false then it will move down to up (event bubbling)
+        // ie. 1. owl click, 2. ul clicked
+
+        // but if we set to true the it will move up to down (capturing mode)
+        // 1. ul clicked, 2. owl clicked
+
+        // document.getElementById("google").addEventListener("click", (event) => {
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     console.log("Google Clicked");
+        // }, false)
+
+        document.getElementById("images").addEventListener("click", (event) => {
+            console.log(event.target);
+            console.log(event.target.parentNode);
+            // let removeIt = event.target.parentNode;
+            // removeIt.remove(); // but there is a catch to use it, if we use it and we click the li then it will remove the li parent that is ul, means it will remove the entire ul not just the image, so will use condtions to remove it
+            // another way
+            // removeIt.parentNode.removeChild(removeIt);
+            
+            if(event.target.tagName === "IMG") {
+                let removeIt = event.target.parentNode;
+                console.log(event.target.id);
+                removeIt.remove();
+            }
+        })
+   </script>
+</body>
+</html>

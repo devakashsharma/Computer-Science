@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h2>Shingeki no Kyojin</h2>
+    <button id="btn">Stop</button>
+
+    <script>
+        // setTimeout(function() {
+        //     console.log("Attack on Titan");
+        // }, 2000)
+
+        const hello = function() {
+            console.log("Attack on Titan");
+            console.log("Shinzo wo Sasageyo");
+        }
+
+        setTimeout(hello, 2000);
+
+        const series = () => {
+            document.querySelector("h2").innerHTML += " Final Season Part 2";
+        }
+
+        const changeMe = setTimeout(series, 5000);
+
+        // if we want to stop the setTimeout because it is taking too much time then we can so this
+        document.querySelector("#btn").addEventListener("click", function() {
+            clearTimeout(changeMe);
+            console.log("Rumbling stopped successfully");
+        })
+    </script>
+</body>
+</html>

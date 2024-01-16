@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h2>Shall we Start Rumbling?</h2>
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+
+    <script>
+        // document.querySelector("#yes").addEventListener('click', () => {
+        //     document.querySelector("h2").innerHTML = "Rumbling Rumbling it's comming Rumbling...........";
+        // })
+
+        // document.querySelector("#no").addEventListener('click', () => {
+        //     document.querySelector("h2").innerHTML = "Eren is now gone. So, Rumbling successfully stopped";
+        // })
+
+
+        // Practice
+        // const showDate = document.querySelector("#yes").addEventListener("click", (str) => {
+        //     console.log(str, Date.now());
+        // })
+
+        // const inter = setInterval(showDate, 1000, "Date: ");
+
+        // const sayDate = function(str){
+        //     console.log(str, Date.now());
+        // }
+
+        // const intervalId = setInterval(sayDate, 1000, "hi")
+
+        // const inter = function () {
+        //     document.querySelector("#yes").addEventListener("click", (str) => {
+        //         console.log(str, Date.now());
+        //     })
+        // }
+
+        // setInterval(inter, 1000, "hi")
+
+        let clearID;
+        const set = document.querySelector("#yes").addEventListener("click", () => {
+            clearID = setInterval(() => {
+                console.log(Date.now());
+            }, 1000);
+        })
+
+
+        const clear = document.querySelector("#no").addEventListener("click", () => {
+            clearInterval(clearID);
+        })
+
+        clearInterval(clear);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML</title>
+</head>
+<body>
+    <script>
+        const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl) // state 1
+
+        // it will track all the states
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState);
+
+            // if want the respons then.....
+            if(xhr.readyState === 4) {
+                // console.log(this.responseText);
+                // but actually we never declare the variable responseText, when we use "this" means we are using current context so it will return the respons
+
+                // most of the time the response comes as string so we need to convert into JSON
+                const data = JSON.parse(this.responseText);
+                console.log(typeof data);
+                console.log(data.followers);
+            }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>

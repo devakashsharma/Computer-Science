@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        #Profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="Profile">
+        <button id="btn">Check Profile</button>
+    </div>
+    <script>
+        let followNum;
+        let profileImg = document.createElement('img');
+        profileImg.style.width = '280px';
+        profileImg.style.height = '300px';
+        
+        const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState);
+
+            if(xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText);
+                profileImg.src = data.avatar_url;
+                followNum = data.followers;
+            }
+        }
+
+        xhr.send();
+
+        // event listeners
+        document.querySelector("#btn").addEventListener('click', () => {
+            document.querySelector("#Profile").appendChild(profileImg);
+        
+            let followers = document.createElement('div');
+            followers.innerHTML = `<span>Followers: ${followNum}</span>`;
+            document.querySelector("#Profile").appendChild(followers);
+        })
+    </script>
+</body>
+</html>

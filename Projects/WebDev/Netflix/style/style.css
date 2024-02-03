@@ -8,7 +8,7 @@
 }
 
 .main {
-  background-image: url("/Computer-Science-Projects/WebDev/Netflix/assets/image/main_background.jpg");
+  background-image: url("/Computer-Science/Projects/WebDev/Netflix/assets/image/main_background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: max(1200px, 100vw);

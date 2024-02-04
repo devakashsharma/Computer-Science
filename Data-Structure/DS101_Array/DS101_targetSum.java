@@ -1,7 +1,7 @@
 // package Java_Practice.Array;
 import java.util.Scanner;
 
-public class My01_targetSum {
+public class DS101_targetSum {
     static int targetSum(int[] arr, int target) {
         int arrSize = arr.length;
         int count = 0;

@@ -1,7 +1,7 @@
 package Data-Structure.DS101_Array;
 import java.util.Scanner;
 
-public class My03_unique {
+public class DS103_unique {
     static int unique(int[] arr) {
         int size = arr.length;
 

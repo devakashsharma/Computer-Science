@@ -1,7 +1,7 @@
 package Data-Structure.DS101_Array;
 import java.util.Scanner;
 
-public class My02_tripletSum {
+public class DS102_tripletSum {
 
     static int tripletSum(int[] arr, int target) {
         int size = arr.length;

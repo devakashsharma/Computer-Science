@@ -7,7 +7,7 @@ public class DS115_sum2D {
             return;
         }
 
-        int[][] sum = new int[r1][c1];
+        int[][] sum = new int[r1][c2];
 
         for(int i = 0; i < r1; i++) {
             for(int j = 0; j < c1; j++) {

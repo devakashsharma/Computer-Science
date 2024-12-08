@@ -1,0 +1,15 @@
+{
+  "name": "my02_npm",
+  "version": "1.0.0",
+  "main": "My01_npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}

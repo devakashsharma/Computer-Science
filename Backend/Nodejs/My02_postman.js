@@ -1,11 +1,11 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-    if (res.method === "GET" && res.url === "/") {
+    if (req.method === "GET" && req.url === "/") {
         res.statusCode = 200;
         res.setHeader("content-type", "text/plain");
-        res.end("Yooo, it's a Home Page, Get request")
-    } else if (res.method === "POST" && res.url === "/submit") {
+        res.end("Yooo, it's a Home Page, GET request");
+    } else if (req.method === "POST" && req.url === "/submit") {
         let body = "";
         req.on("data", chunk => {
             body += chunk.toString();
@@ -20,6 +20,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(4000, () => {
-    console.log("Server running at http://localhost:4000/");
-})
+server.listen(3000, () => {
+    console.log("Server running at http://localhost:3000/");
+});

@@ -1,5 +1,6 @@
 # Find the index of first occurrence of a number using binary search.
 def first_occurance(arr, target):
+    arr.sort()
     first_index = -1
     start, end = 0, len(arr) - 1
     while start <= end:
